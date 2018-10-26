@@ -1,0 +1,25 @@
+package DiceRolls;
+import java.lang.Math;
+
+import java.util.Scanner;
+
+public class Die 
+{
+	int numOfSides;
+	
+	public Die(int sidesDie)
+	{
+		 numOfSides = sidesDie;
+	}
+	
+	public int roll()
+	{
+		int output = (int) (Math.random() * numOfSides) + 1;
+		
+		
+		return output;
+	}
+	
+	
+	
+}
