@@ -1,0 +1,19 @@
+package DiceRolls;
+
+import java.util.Scanner;
+
+public class DieDriver {
+	
+	public static void main (String[] Args)
+	{
+		
+		System.out.println("Enter the number of sides: ");
+		Scanner keyboard = new Scanner(System.in);
+		int sides = keyboard.nextInt();
+		Die d1 = new Die(sides);
+		
+		System.out.println(d1.roll());
+		
+	}
+	
+}
